@@ -1,0 +1,44 @@
+.title {
+    font-family: "Ruslan Display", serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: transparent; /* Makes text transparent to show gradient */
+    background: linear-gradient(135deg, #581845, #5d3245, #bc446a);
+    background-size: 400% 400%; /* Ensures smooth gradient movement */
+    background-clip: text;
+    -webkit-background-clip: text; /* Safari compatibility */
+    animation: moveGradient 4s ease infinite; /* Gradient animation */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4); /* Subtle glowing effect */
+  }
+  
+  /* Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+    .title {
+      background: linear-gradient(135deg, #ff6a00, #ff6347, #ff4500); /* Lighter gradient for dark mode */
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  /* Animation for gradient */
+  @keyframes moveGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .img-thumbnail {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+  }
+
+
+
+
